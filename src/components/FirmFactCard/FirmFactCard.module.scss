@@ -1,0 +1,40 @@
+.card {
+  padding: 27px;
+  transition: background-color 0.3s, border-color 0.3s;
+  background-color: #ffffff;
+  min-height: 322px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  &.default {
+    align-items: center;
+
+    &:hover {
+      background-color: #07c06a;
+      button {
+        background-color: #07c06a;
+        border-color: #fff;
+      }
+    }
+  }
+
+  &.border {
+    align-items: start;
+    border: 15px solid;
+    border-color: #fff;
+
+    &:hover {
+      border-color: #07c06a;
+      button {
+        background-color: #07c06a;
+        border-color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.firmFacts {
+  box-sizing: border-box;
+  max-width: 1680px;
+  min-width: 768px;
+  background-color: #2d3e4e;
+  margin: 100px auto 0px;
+  padding: 85px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 66px;
+  text-align: left;
+  color: #fff;
+  margin-top: 42px;
+  margin-bottom: 22px;
+}
+
+.divider {
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+  padding: 0px;
+  margin-bottom: 51px;
+  margin-top: 0px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+
+ &> :first-child {
+  grid-row: span 2;
+ }
+}
+
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1005px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1350px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
